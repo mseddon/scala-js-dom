@@ -2,6 +2,7 @@ package org.scalajs.dom
 
 import scala.scalajs.js
 import scala.scalajs.js.typedarray.{ArrayBufferView, ArrayBuffer, Uint8Array}
+import scala.language.implicitConversions
 
 package object crypto {
   type BigInteger = Uint8Array

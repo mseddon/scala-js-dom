@@ -10,7 +10,7 @@
 
 package org.scalajs.dom.raw
 
-import org.scalajs.dom.crypto
+import org.scalajs.dom.crypto.GlobalCrypto
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.JSName
@@ -1844,7 +1844,7 @@ trait WindowSessionStorage extends js.Object {
  */
 class Window extends EventTarget with WindowLocalStorage
   with WindowSessionStorage with WindowTimers with WindowBase64
-  with IDBEnvironment with WindowConsole with crypto.GlobalCrypto {
+  with IDBEnvironment with WindowConsole with GlobalCrypto {
   var ondragend: js.Function1[DragEvent, _] = js.native
   /**
    * An event handler property for keydown events on the window.
